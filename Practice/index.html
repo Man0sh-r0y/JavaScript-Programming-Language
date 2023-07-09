@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            background-color: red;
+        }
+
+        #childDiv {
+            background-color: aqua;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Submit</button>
+    <div class="myDiv">
+        <p id="myPara" class="para">Hello! I'm Manash Roy</p>
+    </div>
+    <div>
+        <div id="childDiv">This is a div element</div>
+        <button onclick="toggleDisplay('#childDiv')">Toggle Div element</button>
+    </div>
+    <br><br>
+
+    <!--Form-->
+    <form action="#" id="myForm">
+        <!--Name-->
+        <label for="text">Name</label>
+        <input type="text" id="name"> <br><br>
+        <!--Password-->
+        <label for="password">Password</label>
+        <input type="password" id="password"> <br> <br>
+        <!--Mobile Number-->
+        <label for="phone">Mobile</label>
+        <input type="tel" id="phone"> <br><br>
+        <!--Submit Button-->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <div class="download-file">
+        <a href=""></a>
+    </div>
+
+</body>
+
+</html>
