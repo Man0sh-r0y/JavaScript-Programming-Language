@@ -8,7 +8,7 @@ console.log(date);
 date = new Date(10);// If you supply only one parameter it will be treated as milliseconds.
 console.log(date); // new Date(milliseconds).
 
-date = new Date(2003, 10, 07);// new Date(year, month, ...) creates a date object with a specified date and time. 
+date = new Date(2003, 10, 7);// new Date(year, month, ...) creates a date object with a specified date and time. 
 // 7 numbers specify year, month, day, hour, minute, second, and millisecond(in that order)
 console.log(date);
 
@@ -51,10 +51,10 @@ console.log(birthday);
 birthday.setMonth(11);// sets the month of a date object.
 console.log(birthday);
 
-birthday.setDate(06);//  sets the day of the month of a date.
+birthday.setDate(6);//  sets the day of the month of a date.
 console.log(birthday);
 
 
 
-date = new Date(2003,11,06);
+date = new Date(2003,11,6);
 console.log(date);
