@@ -11,3 +11,4 @@ for (let key of Object.entries(rectangle)) {
 //     [ 'length', 2 ]
 //     [ 'breadth', 4 ]
 }
+// The Object. entries() method returns an array of the key/value pairs of an object.
