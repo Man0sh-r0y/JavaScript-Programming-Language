@@ -29,4 +29,14 @@ console.log(rec3); // { length: 3, breadth: 2, draw: [Function: draw] }
 console.log(typeof (createRectangle));// function
 console.log(typeof (rec1)); // object
 console.log(rec1.constructor); // [Function: Object]
+// createRectangle function is returning an object
+// and that's pointed by the `rec1` variable
+// we know that constructor means the special type of function which creates object
+// so rec1.constructor is the constructor function (createRectangle)
+// In javascript every function is an object
+// so this constructor is an object 
 console.log(createRectangle.constructor);// [Function: Function]
+// createRectangle is itself a function
+// and every function is an object in javascript
+// so, constructor property of this function points to the Function constructor
+// createRectangle.constructor gives you the constructor function which is Function.
