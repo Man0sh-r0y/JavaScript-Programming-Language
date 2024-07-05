@@ -5,7 +5,7 @@
 // In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
 
 function printEventTargetName(event) {
-     alert("Event Target = " + event.target.tagName + ", Current Event target = " + event.currentTarget.tagName);
+     console.log("Event Target = " + event.target.tagName + ", Current Event target = " + event.currentTarget.tagName);
 }
 
 // The target property returns the element where the event occured.
@@ -24,13 +24,20 @@ function printEventTargetName(event) {
 let child = document.querySelector('.child');
 child.addEventListener('click', printEventTargetName, true);
 // The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.
+// OUTPUT: Event Target = P, Current Event target = DIV
 
-child.parentNode.addEventListener('click',printEventTargetName,true);
+child.parentNode.addEventListener('click', printEventTargetName, true);
+// OUTPUT: Event Target = P, Current Event target = SPAN
 
-child.parentNode.parentNode.addEventListener('click',printEventTargetName,true);
+child.parentNode.parentNode.addEventListener('click', printEventTargetName, true);
+// OUTPUT: // Event Target = P, Current Event target = SECTION
 
- 
-// OUTPUT:
-// Event Target = P, Current Event target = SECTION
-// Event Target = P, Current Event target = SPAN
-// Event Target = P, Current Event target = DIV
+
+console.log("Child: " + child); // DIV
+console.log("Child ParentNode: " + child.parentNode); // SPAN
+console.log("Child ParentNode ParentNode: " + child.parentNode.parentNode); // SECTION
+
+
+// another example
+document.getElementById('prentDivBtn').addEventListener('click', printEventTargetName);
+document.getElementById('parentDivBtn').addEventListener('click', printEventTargetName, true);

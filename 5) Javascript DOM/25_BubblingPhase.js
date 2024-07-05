@@ -27,5 +27,3 @@ child.addEventListener('click',printEventTargetName);// OUTPUT: Event Target = P
 child.parentNode.addEventListener('click',printEventTargetName);// OUTPUT: Event Target = P, Current Event target = SPAN
 
 child.parentNode.parentNode.addEventListener('click',printEventTargetName);// OUTPUT: Event Target = P, Current Event target = SECTION
-
- 
