@@ -1,6 +1,6 @@
 let promise1 = Promise.resolve("Promise is resolved");
 promise1.then(result => {
-    console.log(result);
+    console.log(result); // OUTPUT: Promise is resolved
 });
 // Promise.resolve() is a method that returns a Promise object that is resolved with a given value.
 // If you pass a value to Promise.resolve(),

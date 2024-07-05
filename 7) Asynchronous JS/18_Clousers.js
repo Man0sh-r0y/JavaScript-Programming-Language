@@ -10,7 +10,7 @@ function outer() {
 };
 
 const greeting = outer();
-greeting();
+greeting(); // OUTPUT: Hi !Manash
 
 // A function can't be revoked or called, Untill we call that function
 
