@@ -10,6 +10,11 @@ setTimeout(() => console.log("Sum = " + (num1 + num2)), 5000);
 
 console.log("Hello World");
 
+// OUTPUT:
+// 30 40
+// Hello World
+// Sum = 70 (After 5 sec, it appears)
+
 // At first, as usual, the num1 and num2 statement got logged in. 
 // As we use browsers to run JavaScript, there are the web APIs that handle these things for users.
 // So, what JavaScript does is, it passes the setTimeout function in such web API and then we keep on running our code as usual.
