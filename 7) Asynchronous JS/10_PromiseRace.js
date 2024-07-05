@@ -6,6 +6,7 @@ let promiseRace = Promise.race([p1, p2, p3]);
 promiseRace.then(result => console.log(result));
 promiseRace.catch(error => console.log(error));
 // OUTPUT: Promise 3 has been resolved
+// then program will be terminated
 
 // Promise.race() static method accepts a list of promises as an iterable object
 // and returns a new promise that fulfills or rejects
