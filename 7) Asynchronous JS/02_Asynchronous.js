@@ -4,7 +4,7 @@
 let num1 = 30;
 let num2 = 40;
 
-console.log(numk1 + " " + num2);
+console.log(num1 + " " + num2);
 
 setTimeout(() => console.log("Sum = " + (num1 + num2)), 5000);
 
