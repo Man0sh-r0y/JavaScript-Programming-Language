@@ -30,3 +30,11 @@ const makeTea = (nextStep) => {
 }
 
 makeTea(milk);
+
+// How to Avoid Callback Hell
+// To manage and avoid callback hell, you can use several techniques:
+
+// Write Comments: Adding comments can help make the code more understandable.
+// Split Functions: Break down large functions into smaller, more manageable ones.
+// Promises: Use Promises to handle asynchronous operations more cleanly.
+// Async/Await: This modern approach makes asynchronous code look synchronous, improving readability.
